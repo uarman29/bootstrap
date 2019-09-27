@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 4 Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <!--Three equal width columns-->
+  <div class="row container-fluid">
+    <div class="col">.col</div>
+    <div class="col">.col</div>
+    <div class="col">.col</div>
+  </div>
+
+  <!--Four equal width responsive columns-->
+  <div class="row container-fluid">
+    <div class="col-sm-3">.col-sm-3</div>
+    <div class="col-sm-3">.col-sm-3</div>
+    <div class="col-sm-3">.col-sm-3</div>
+    <div class="col-sm-3">.col-sm-3</div>
+  </div>
+
+  <!--Two unequal width responsive columns-->
+  <div class="row container-fluid">
+    <div class="col-sm-4">.col-sm-4</div>
+    <div class="col-sm-8">.col-sm-8</div>
+  </div>
+
+  <!--Responsive Headings and Display-->
+  <div class = "container-fluid">
+  <h1>h1 Bootstrap heading (2.5rem = 40px)</h1>
+  <h2>h2 Bootstrap heading (2rem = 32px)</h2>
+  <h3>h3 Bootstrap heading (1.75rem = 28px)</h3>
+  <h4>h4 Bootstrap heading (1.5rem = 24px)</h4>
+  <h5>h5 Bootstrap heading (1.25rem = 20px)</h5>
+  <h6>h6 Bootstrap heading (1rem = 16px)</h6>
+  <h1 class="display-1">Display 1</h1>
+  <h1 class="display-2">Display 2</h1>
+  <h1 class="display-3">Display 3</h1>
+  <h1 class="display-4">Display 4</h1>
+  <h1>Lighter, Secondary Text</h1>
+  <p>The small element is used to create a lighter, secondary text in any heading:</p>
+  <h1>h1 heading <small>secondary text</small></h1>
+  <h2>h2 heading <small>secondary text</small></h2>
+  <h3>h3 heading <small>secondary text</small></h3>
+  <h4>h4 heading <small>secondary text</small></h4>
+  <h5>h5 heading <small>secondary text</small></h5>
+  <h6>h6 heading <small>secondary text</small></h6>
+  <h1>Highlight Text</h1>
+  <p>Use the mark element to <mark>highlight</mark> text.</p>
+  </div>
+
+  <!--Responsive Description List-->
+  <div class="container-fluid">
+    <h1>Description Lists</h1>
+    <p>The dl element indicates a description list:</p>
+    <dl>
+      <dt>Coffee</dt>
+      <dd>- black hot drink</dd>
+      <dt>Milk</dt>
+      <dd>- white cold drink</dd>
+    </dl>
+  </div>
+
+  <!--Responsive Code Element-->
+  <div class="container-fluid">
+    <h1>Code Snippets</h1>
+    <p>Inline snippets of code should be embedded in the code element:</p>
+    <p>The following HTML elements: <code>span</code>, <code>section</code>, and <code>div</code> defines a section in a document.</p>
+  </div>
+
+  <!--Responsive Keyboard Input Element-->
+  <div class="container-fluid">
+    <h1>Keyboard Inputs</h1>
+    <p>To indicate input that is typically entered via the keyboard, use the kbd element:</p>
+    <p>Use <kbd>ctrl + p</kbd> to open the Print dialog box.</p>
+  </div>
+
+  <!--Responsive Table with hover-->
+  <div class="container-fluid">
+    <h2>Basic Table</h2>
+    <p>The .table class adds basic styling (light padding and horizontal dividers) to a table:</p>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>john@example.com</td>
+        </tr>
+        <tr>
+          <td>Mary</td>
+          <td>Moe</td>
+          <td>mary@example.com</td>
+        </tr>
+        <tr>
+          <td>July</td>
+          <td>Dooley</td>
+          <td>july@example.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+   <!--Images-->
+  <img src="test.jpg" class="rounded img-fluid" alt="Space"> <!--Responsive Image-->
+  <img src="test.jpg" class="rounded-circle mx-auto d-block" alt="Space">  <!--Centered rounded image-->
+  <img src="test.jpg" class="img-thumbnail" alt="Space">
+
+   <!--Jumbotron-->
+  <div class="jumbotron jumbotron-fluid">
+    <h1>Bootstrap Tutorial</h1>
+    <p>Bootstrap is the most popular HTML, CSS...</p>
+  </div>
+
+   <!--Alerts-->
+  <div class="alert alert-success">
+  <strong>Success!</strong> You should <a href="#" class="alert-link">read this message</a>.
+  </div>
+
+  <div class="alert alert-danger">
+    <strong>Success!</strong> You should <a href="#" class="alert-link">read this message</a>.
+  </div>
+
+   <!--Alert with x button-->
+  <div class="alert alert-success alert-dismissible">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>Success!</strong> Indicates a successful or positive action.
+  </div>
+
+   <!--Alert with x button that fades-->
+  <div class="alert alert-danger alert-dismissible fade show">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+  </div>
+
+   <!--Button Element-->
+  <h2>Button Elements</h2>
+  <a href="#" class="btn btn-info" role="button">Link Button</a>
+  <button type="button" class="btn btn-info">Button</button>
+  <input type="button" class="btn btn-info" value="Input Button">
+  <button type="button" class="btn btn-outline-primary">Primary</button>
+  <button type="button" class="btn btn-outline-dark">Dark</button>
+
+  <!--Button sizes-->
+  <button type="button" class="btn btn-primary btn-lg">Large</button>
+  <button type="button" class="btn btn-primary">Default</button>
+  <button type="button" class="btn btn-primary btn-sm">Small</button>
+  <button type="button" class="btn btn-primary btn-block">Full-Width Button</button>
+
+   <!--Button Group with dropdown-->
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary">Apple</button>
+    <button type="button" class="btn btn-primary">Samsung</button>
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+         Sony
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Tablet</a>
+        <a class="dropdown-item" href="#">Smartphone</a>
+      </div>
+    </div>
+  </div>
+
+  <!--Button with split dropdown-->
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary">Sony</button>
+    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+      <span class="caret"></span>
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Tablet</a>
+      <a class="dropdown-item" href="#">Smartphone</a>
+    </div>
+  </div>
+
+  <!--Bade-->
+  <span class="badge badge-primary">Primary</span>
+  <!--Button with Badge-->
+  <button type="button" class="btn btn-primary">
+    Messages <span class="badge badge-light">4</span>
+  </button>
+
+  <!--Progress Bar-->
+  <div class="progress">
+    <div class=" bg-success" style="width:70%"></div>
+  </div>
+  <br/>
+  <!--Progress Bar with height 20px-->
+  <div class="progress" style="height:20px">
+    <div class="progress-bar bg-info" style="width:40%;height:20px"></div>
+  </div>
+  <br/>
+  <!--Red progress bar-->
+  <div class="progress">
+    <div class="progress-bar bg-warning" style="width:70%">70%</div>
+  </div>
+  <br />
+  <!--Stripped Progress Bar-->
+  <div class="progress">
+    <div class="progress-bar progress-bar-striped" style="width:40%"></div>
+  </div>
+  <br />
+  <!--Animated Stripped Progress Bar-->
+  <div class="progress">
+    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:40%"></div>
+  </div>
+  <br />
+  <!--Multiple progress bars-->
+  <div class="progress">
+    <div class="progress-bar bg-success" style="width:40%">
+      Free Space
+    </div>
+    <div class="progress-bar bg-warning" style="width:10%">
+      Warning
+    </div>
+    <div class="progress-bar bg-danger" style="width:20%">
+      Danger
+    </div>
+  </div>
+  <br />
+
+  <!--List with first active-->
+  <ul class="list-group">
+  <li class="list-group-item active">Active item</li>
+  <li class="list-group-item">Second item</li>
+  <li class="list-group-item">Third item</li>
+  </ul>
+  <br />
+
+  <!--List with links-->
+  <div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action">First item</a>
+  <a href="#" class="list-group-item list-group-item-action">Second item</a>
+  <a href="#" class="list-group-item list-group-item-action">Third item</a>
+  </div>
+  <br />
+
+  <!--CARDS-->
+  <div class="card">
+    <div class="card-body">Basic card</div>
+  </div>
+  <br />
+  <!--CARD with header body and footer-->
+  <div class="card">
+    <div class="card-header">Header</div>
+    <div class="card-body">Content</div>
+    <div class="card-footer">Footer</div>
+  </div>
+  <br />
+  <!--CARD with title and body-->
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Card title</h4>
+      <p class="card-text">Some example text. Some example text.</p>
+      <a href="#" class="card-link">Card link</a>
+      <a href="#" class="card-link">Another link</a>
+    </div>
+  </div>
+
+  <!--CARD DECK-->
+  <br />
+  <div class = "container-fluid card-deck">
+    <div class="card">
+      <img class="card-img-top" src="pizza.jpg" style = "height:50%" alt="Card image">
+      <div class="card-body">
+        <h4 class="card-title">Pizza</h4>
+        <p class="card-text">It's pizza what else do you want</p>
+        <a href="#" class="btn btn-primary">Order</a>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="burger.jfif" style = "height:50%" alt="Card image">
+      <div class="card-body">
+        <h4 class="card-title">Burger</h4>
+        <p class="card-text">It's a burger what else do you want</p>
+        <a href="#" class="btn btn-primary">Order</a>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="wings.jpg" style = "height:50%" alt="Card image">
+      <div class="card-body">
+        <h4 class="card-title">Wings</h4>
+        <p class="card-text">It's wings what else do you want</p>
+        <a href="#" class="btn btn-primary">Order</a>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="fries.jpg" style = "height:50%" alt="Card image">
+      <div class="card-body">
+        <h4 class="card-title">Fries</h4>
+        <p class="card-text">It's fries what else do you want</p>
+        <a href="#" class="btn btn-primary">Order</a>
+      </div>
+    </div>
+  </div>
+
+  <!--Dropdown-->
+  <div class="dropdown text-center">
+    <button type="button" class="btn btn-outline-dark dropdown-toggle" data-toggle="dropdown">
+      Dropdown button
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Link 1</a>
+      <a class="dropdown-item" href="#">Link 2</a>
+      <a class="dropdown-item" href="#">Link 3</a>
+    </div>
+  </div>
+  <br />
+
+  <!--Collapsible-->
+  <div class="container">
+    <h2>Simple Collapsible</h2>
+    <p>Click on the button to toggle between showing and hiding content.</p>
+    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo1">Simple collapsible</button>
+    <div id="demo1" class="collapse">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </div>
+  </div>
+  <br />
+
+  <!-- Accordian -->
+  <div id="accordion">
+      <div class="card">
+        <div class="card-header">
+          <a class="card-link" data-toggle="collapse" href="#collapseOne">
+            Collapsible Group Item #1
+          </a>
+        </div>
+        <div id="collapseOne" class="collapse show" data-parent="#accordion">
+          <div class="card-body">
+            Lorem ipsum..
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+            Collapsible Group Item #2
+          </a>
+        </div>
+        <div id="collapseTwo" class="collapse" data-parent="#accordion">
+          <div class="card-body">
+            Lorem ipsum..
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+            Collapsible Group Item #3
+          </a>
+        </div>
+        <div id="collapseThree" class="collapse" data-parent="#accordion">
+          <div class="card-body">
+            Lorem ipsum..
+          </div>
+        </div>
+      </div>
+  </div>
+  <br />
+  <!--Basic Nav Menu-->
+  <ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Disabled</a>
+    </li>
+  </ul>
+  <br />
+  <!--Toggled Tabs-->
+  <div class="container">
+    <h2>Toggleable Tabs</h2>
+    <br>
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#menu1">Menu 1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#menu2">Menu 2</a>
+      </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div id="home" class="container tab-pane active"><br>
+        <h3>HOME</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      <div id="menu1" class="container tab-pane fade"><br>
+        <h3>Menu 1</h3>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <div id="menu2" class="container tab-pane fade"><br>
+        <h3>Menu 2</h3>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+      </div>
+    </div>
+  </div>
+  <br />
+
+  <!--Navigation Bar-->
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Active</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+  </nav>
+  <br />
+
+  <!--Navbar with dropdown-->
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <!-- Brand -->
+    <a class="navbar-brand" href="#">Logo</a>
+
+    <!-- Links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link 1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link 2</a>
+      </li>
+
+      <!-- Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Dropdown link
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Link 1</a>
+          <a class="dropdown-item" href="#">Link 2</a>
+          <a class="dropdown-item" href="#">Link 3</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <!--Used fixed-top or fixed-bottom to fix location-->
+
+  <!--Carousel-->
+   <div id="demo" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="pizza.jpg" alt="Los Angeles" width="1800" height="500">
+      </div>
+      <div class="carousel-item">
+        <img src="wings.jpg" alt="Chicago" width="1800" height="500">
+      </div>
+      <div class="carousel-item">
+        <img src="fries.jpg" alt="New York" width="1800" height="500">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+</body>
+</html>
